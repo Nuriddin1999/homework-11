@@ -16,7 +16,6 @@ export class Lemonade extends Drink {
 }
 
 export class Tea extends Drink {
-
   #makeDrink() {
     console.log(`zavarivayu listya i poluchayem ${this.name}`);
   }
