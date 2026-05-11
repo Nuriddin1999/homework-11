@@ -16,9 +16,6 @@ export class Lemonade extends Drink {
 }
 
 export class Tea extends Drink {
-  constructor(name, size, price, temperature) {
-    super(name, size, price, temperature);
-  }
 
   #makeDrink() {
     console.log(`zavarivayu listya i poluchayem ${this.name}`);

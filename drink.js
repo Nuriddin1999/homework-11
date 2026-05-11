@@ -1,6 +1,10 @@
 export class Drink {
   #temperature;
   constructor(name, size, price, temperature) {
+    if (new.target === Drink) {
+      throw new Error("It is an abstract class");
+    }
+
     this.name = name;
     this.size = size;
     this.price = price;
